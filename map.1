@@ -1,0 +1,39 @@
+.Dd March 11, 2018
+.Dt MAP 1
+.
+.Sh NAME
+.
+.Nm map
+.Nd Map lines from stdin to commands.
+.
+.Sh SYNOPSIS
+.
+.Nm 
+.Ar variable
+.Ar command
+.
+.Sh DESCRIPTION
+.
+.Nm
+lets you process each line from stdin with a command of your
+choice.
+.
+.Sh EXAMPLES
+.
+Here's an example:
+.Pp
+.Dl $ ls
+.Dl Sy LICENSE   README.md makefile  map.1   map.c
+.Pp
+.Dl $ ls | map f 'echo $f $f'
+.Dl Sy LICENSE LICENSE
+.Dl Sy README.md README.md
+.Dl Sy makefile makefile
+.Dl Sy map.1   map.1
+.Dl Sy map.c   map.c
+.Pp
+Note that the command must be wrapped in single quotes to prevent
+the variable from being expanded by the shell.
+.
+.Sh AUTHOR
+.An Michel Martens Aq mail@soveran.com
