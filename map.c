@@ -43,8 +43,14 @@ int main(int argc, char **argv) {
 	ssize_t llen;
 
 	while ((llen = getline(&line, &lcap, stdin)) > 0) {
-		setenv(argv[1], line, 1);
-		system(argv[2]);
+		if (llen > 1) {
+			if (line[llen-1] == '\n') {
+				line[llen-1] = '\0';
+			}
+
+			setenv(argv[1], line, 1);
+			system(argv[2]);
+		}
 	}
 
 	return 0;

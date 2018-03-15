@@ -5,4 +5,4 @@ assert_equal () {
 }
 
 assert_equal "foofoo" `printf foo | ./map f 'printf $f$f'`
-assert_equal "foobarbaz" `cat ./test/input | ./map f 'printf $f'`
+assert_equal "foobarbaz" `cat ./test/input | ./map f 'printf "$f"'`
