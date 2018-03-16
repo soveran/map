@@ -172,7 +172,7 @@ As with anything in life, familiarity helps and if you use a tool
 in a certain way over and over it will seem simple to operate, but
 we can still analyze the conceptual models and determine how much
 information is needed in each case. I would say the advantage of
-`map` is that it requiress less knowledge.
+`map` is that it requires less knowledge.
  
 Of course `xargs` and `find` are much larger tools, with a bigger
 feature set. Map has around 20 lines of code. For comparison, here's
