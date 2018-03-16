@@ -42,14 +42,13 @@ Motivation
 ----------
 
 There are many ways to accomplish what you can do with `map`,
-including shell `find`, `xargs`, `awk`, and shell for-loops. The
-approach taken by `map` is extremely pragmatic and allows me to
-express concisely what I want. Given the fact that it's designed
-as a filter, it can operate on any kind of list, not only lists of
-files.
+including `find`, `xargs`, `awk`, and shell for-loops. The approach
+taken by `map` is extremely pragmatic and allows me to express
+concisely what I want. Given the fact that it's designed as a filter,
+it can operate on any kind of list, not only lists of files.
 
 The problem that prompted me to think about `map` was the following:
-given a list of files, I want to execute two commands on each.
+given a list of files, I wanted to execute two commands on each.
 Here's how you can do it with different tools:
 
 With `map`:
