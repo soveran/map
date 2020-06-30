@@ -183,7 +183,7 @@ using `xargs` and for-loops. Another way to think about `map` vs
 released, I'm not sure I would install it unless `map` proved to
 be unfit for a given use case.
 
-[xargs]: https://fossies.org/dox/findutils-4.6.0/xargs_8c_source.html
+[xargs]: https://fossies.org/dox/findutils-4.7.0/xargs_8c_source.html
 
 Something important to keep in mind is that `map` works on lines,
 not on files. My reasoning was that in the context of a POSIX
